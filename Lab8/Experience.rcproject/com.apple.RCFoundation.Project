@@ -132,6 +132,94 @@
                     }
                   ],
                   "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "angularCoefficient" : 1,
+                                          "direction" : "counterclockwise",
+                                          "duration" : 5,
+                                          "linearCoefficient" : 1,
+                                          "orbitalAxis" : [
+                                            0,
+                                            -1,
+                                            0
+                                          ],
+                                          "orientToPath" : true,
+                                          "pivotTarget" : "6F2FEDE9-BD15-4BC7-ACFB-BCD48817090E",
+                                          "respectPhysics" : false,
+                                          "rotations" : 1,
+                                          "target" : [
+                                            "1E130F07-9BDA-404F-A89F-FD813BBC9457"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "orbitEntity"
+                                        }
+                                      },
+                                      "identifier" : "D8A59468-3D36-45A3-80C0-BCA81C641A47",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "96B1B80E-3A4F-4D10-ADCD-5DFDF2E742EE",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.21568627655506134,
+                        0.72549021244049072,
+                        0.80000001192092896,
+                        1
+                      ],
+                      "identifier" : "D9B73981-B23D-4467-8D91-93568D31646C",
+                      "isEnabled" : true,
+                      "isLooping" : true,
+                      "isModal" : false,
+                      "name" : "Behavior 1",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "userIdentifier" : "startNotification"
+                                },
+                                "name" : "custom"
+                              },
+                              "identifier" : "A229A751-552C-4743-95AD-E99F164AADC3",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
                 }
               ],
               "gravity" : [
@@ -146,6 +234,82 @@
                   "4A213441-135C-450E-8EF8-1A4EAB267C1D" : null,
                   "7F5F1ADC-E5E4-4EF5-A5B5-FC43B071FFA5" : null,
                   "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
+                  "8520540E-598C-4096-A5AB-ACB5E613ADA8" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "item",
+                          {
+                            "typeName" : "String",
+                            "value" : "Bass Clef"
+                          }
+                        ],
+                        [
+                          "style",
+                          {
+                            "typeName" : "String",
+                            "value" : "Stylized"
+                          }
+                        ]
+                      ],
+                      "children" : {
+                        "item" : {
+                          "overrides" : {
+                            "factory" : null,
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "BDBAA393-D0B7-4DBF-B2A9-846DDD273610"
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.BassClef.97599793-5a8a-48bc-a999-e3ec18d5fd59",
+                        "version" : "1.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "6F2FEDE9-BD15-4BC7-ACFB-BCD48817090E"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "clef"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0.32734358310699463,
+                        -0.00047358861775137484,
+                        0,
+                        1
+                      ]
+                    }
+                  },
                   "B91C7CA3-4AB1-4253-9A84-07383168A8A8" : null,
                   "C48C3CDC-75C7-4675-9781-74F96BAD90CA" : {
                     "overrides" : {
@@ -276,21 +440,21 @@
               "title" : "Box",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99991911649703979,
-                  -2.3283064365386963e-10,
-                  -0.012715313583612442,
+                  0.99998766183853149,
                   0,
-                  -0.0046757524833083153,
-                  0.92993414402008057,
-                  -0.36769628524780273,
+                  -0.0049549657851457596,
                   0,
-                  0.011824404820799828,
-                  0.36772602796554565,
-                  0.92985892295837402,
+                  -0.0018570382380858064,
+                  0.92710971832275391,
+                  -0.37478536367416382,
                   0,
-                  0.040764100849628448,
-                  1.0776903629302979,
-                  3.2556452751159668,
+                  0.0045937099494040012,
+                  0.37478998303413391,
+                  0.92709833383560181,
+                  0,
+                  0.015141308307647705,
+                  1.1027778387069702,
+                  3.2522599697113037,
                   1
                 ],
                 "sceneTransform" : [

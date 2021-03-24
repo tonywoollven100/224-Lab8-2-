@@ -9,29 +9,37 @@ import SwiftUI
 import RealityKit
 
 struct ContentView : View {
+    
+    // Load the "Box" scene from the "Experience" Reality File
+    let boxAnchor = try! Experience.loadBox()
+    
     var body: some View {
-        return ARViewContainer().edgesIgnoringSafeArea(.all)
+        VStack{
+            ARViewContainer(boxAnchor: boxAnchor).edgesIgnoringSafeArea(.all)
+            //ButtonView()
+            Button("Play", action: {play(boxAnchor: boxAnchor) })
+        }
     }
 }
 
 struct ARViewContainer: UIViewRepresentable {
     
+    var boxAnchor: Experience.Box
+    
     func makeUIView(context: Context) -> ARView {
         
         let arView = ARView(frame: .zero)
-        
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
         
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
         
         return arView
-        
     }
-    
     func updateUIView(_ uiView: ARView, context: Context) {}
-    
+}
+
+func play(boxAnchor: Experience.Box){
+    boxAnchor.notifications.startNotification.post()
 }
 
 #if DEBUG
