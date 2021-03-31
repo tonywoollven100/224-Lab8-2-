@@ -3,5 +3,10 @@
     "libraryIdentifier" : "364ad193e9cdde8f344d200495a12aca",
     "format" : "model",
     "displayName" : "toy_biplane.usdz"
+  },
+  {
+    "libraryIdentifier" : "6a767455d6dcb1e33c49bff777f27bba",
+    "format" : "audio",
+    "displayName" : "transportaton_aircraft_twin_prop_small_idle_001.mp3"
   }
 ]
